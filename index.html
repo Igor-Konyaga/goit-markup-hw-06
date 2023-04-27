@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
+    <!----------------------------------- Main Page ---------------------------------------------->
     <!-- Header -->
     <header class="header">
       <div class="container header-container">
@@ -589,15 +590,40 @@
             </li>
           </ul>
         </div>
+
+        <form class="footer-form">
+          <p class="footer-form-title">Subscribe</p>
+          <div class="form-warraper-mail-btn">
+            <label class="footer-form-label">
+              <input
+                type="email"
+                class="footer-form-input"
+                name="user-email"
+                required
+                placeholder="E-mail"
+              />
+            </label>
+            <button type="submit" class="footer-form-button">
+              Subscribe
+              <svg class="footer-bg-icon" width="24" height="20">
+                <use
+                  class="footer-btn-icon"
+                  href="./images/icon.svg#icon-send"
+                ></use>
+              </svg>
+            </button>
+          </div>
+        </form>
       </div>
     </footer>
+    <!-- Backdrop -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="close-modal" type="button" data-modal-close>
-			<svg class="close-modal-icon" width="8px" height="8px">
-			  <use href="./images/icon.svg#dagger"></use>
-			</svg>
-		  </button>
+          <svg class="close-modal-icon" width="8px" height="8px">
+            <use href="./images/icon.svg#dagger"></use>
+          </svg>
+        </button>
       </div>
     </div>
     <script src="./js/modal.js"></script>
