@@ -200,7 +200,7 @@ body {
   margin-right: 120px;
 }
 .footer-block-social {
-  margin-right: 80px;
+  
 }
 .footer-logo {
   display: inline-block;
@@ -239,8 +239,10 @@ body {
 
 /* Footer Form */
 .footer-form {
+	margin-left: auto;
 }
 .footer-form-title {
+	display: block;
 }
 .form-warraper-mail-btn {
 	display: flex;
@@ -264,6 +266,8 @@ body {
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);;
 	border: 1px solid var(--backround-page);
 	border-radius: 4px;
+
+	transition: border-color var(--anim-fast) var(--timing-function);
 }
 .footer-form-input::placeholder {
 	color: var(--backround-page);
@@ -272,6 +276,11 @@ body {
   line-height: 2;
   letter-spacing: 0.04em;
 }
+.footer-form-input:focus{
+	outline: none;
+	border-color:  var(--accent-color);
+}
+
 .footer-form-button {
 	padding: 8px 24px;
 	margin: 0;
@@ -675,6 +684,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
+  padding: 72px 24px 24px 24px;
   opacity: 1;
 
   width: 408px;
@@ -715,6 +725,10 @@ body {
 .close-modal:hover,
 .close-modal:focus {
   background-color: var(--hover-color);
+}
+
+.option{
+	display: block;
 }
 
 /* ========================= Backdrop ========================== */
