@@ -294,11 +294,11 @@ body {
   background-color: var(--secondary-color-text);
   transform: translateY(-133%);
 }
-.footer-form-input:not(:placeholder-shown) + .footer-label-title{
-padding: 0px 2px;
+.footer-form-input:not(:placeholder-shown) + .footer-label-title {
+  padding: 0px 2px;
 
-transform: translateY(-133%);
-background-color: var(--secondary-color-text);
+  transform: translateY(-133%);
+  background-color: var(--secondary-color-text);
 }
 
 .footer-form-button {
@@ -766,21 +766,23 @@ background-color: var(--secondary-color-text);
   color: var(--secondary-color-text);
 }
 .modal-form-label {
+  margin-bottom: 8px;
 }
 .modal-form-title {
-  margin-bottom: 4px;
-
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
 
   color: #8e8f99;
+  cursor: pointer;
 }
 
 .modal-form-wrraper-input-icon {
   position: relative;
-
   margin-bottom: 8px;
+
+  fill: var(--secondary-color-text);
+  transition: fill var(--anim-fast) var(--timing-function);
 }
 .modal-form-input {
   padding: 11px 38px;
@@ -805,12 +807,15 @@ background-color: var(--secondary-color-text);
   top: 50%;
   left: 16px;
 
+fill: var(--secondary-color-text);
   transform: translateY(-50%);
   transition: fill var(--anim-fast) var(--timing-function);
 }
 .modal-form-icon {
 }
 .form-textarea-title {
+	
+  margin-bottom: 4px;
 }
 .form-modal-textarea {
   padding: 8px 16px;
@@ -851,6 +856,14 @@ background-color: var(--secondary-color-text);
   letter-spacing: 0.04em;
 
   color: #8e8f99;
+}
+.form-link-policy {
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+
+  color: var(--accent-color);
+  text-decoration-line: underline;
 }
 .modal-form-chackbox {
   display: flex;
@@ -909,8 +922,8 @@ background-color: var(--secondary-color-text);
   transition: background-color var(--anim-fast) var(--timing-function);
 }
 .modal-form-btn:hover,
-.modal-form-btn:focus{
-	background-color: var(--hover-color);
+.modal-form-btn:focus {
+  background-color: var(--hover-color);
 }
 /*======= Form Modal =========*/
 /* ========================= Backdrop ========================== */
