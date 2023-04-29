@@ -237,7 +237,7 @@ body {
   background-color: #31d0aa;
 }
 
-/* Footer Form */
+/*============= Footer Form =================*/
 .footer-form {
   margin-left: auto;
 }
@@ -250,6 +250,21 @@ body {
   align-items: center;
 }
 .footer-form-label {
+  position: relative;
+}
+.footer-label-title {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+
+  color: var(--backround-page);
+  transform: translateY(-50%);
+  transition: background-color var(--anim-fast) var(--timing-function),
+    transform var(--anim-fast) var(--timing-function);
 }
 .footer-form-input {
   padding: 8px 16px;
@@ -269,16 +284,21 @@ body {
 
   transition: border-color var(--anim-fast) var(--timing-function);
 }
-.footer-form-input::placeholder {
-  color: var(--backround-page);
 
-  font-size: 12px;
-  line-height: 2;
-  letter-spacing: 0.04em;
-}
 .footer-form-input:focus {
   outline: none;
   border-color: var(--accent-color);
+}
+.footer-form-input:focus + .footer-label-title {
+  padding: 0 2px;
+  background-color: var(--secondary-color-text);
+  transform: translateY(-133%);
+}
+.footer-form-input:not(:placeholder-shown) + .footer-label-title{
+padding: 0px 2px;
+
+transform: translateY(-133%);
+background-color: var(--secondary-color-text);
 }
 
 .footer-form-button {
@@ -303,10 +323,9 @@ body {
 }
 .footer-btn-icon {
 }
-/* Footer Form */
+/*================= Footer Form ==================*/
 
-/* =============== social network icons ========================= */
-
+/* ==================== Social Network Icons ========================= */
 .list-icons {
   display: flex;
   justify-content: center;
@@ -340,9 +359,11 @@ body {
 .team-list-link:focus {
   background-color: var(--hover-color);
 }
-/*=========================== Repeating Blocks ======================= */
+/* =============== social network icons ========================= */
 
-/* ============================ Main Page ============================*/
+/*================================ Repeating Blocks ========================= */
+
+/* ============================================= Main Page ==================================*/
 /* ============= Section Hero ============== */
 .hero {
   max-width: 1440px;
@@ -844,7 +865,7 @@ body {
   border-radius: 2px;
   transition: background-color var(--anim-fast) var(--timing-function),
     border var(--anim-fast) var(--timing-function);
-	 cursor: pointer;
+  cursor: pointer;
 }
 .modal-input-checkbox:focus + .modal-label-policy > .modal-form-chackbox {
   outline: 2px solid var(--accent-color);
