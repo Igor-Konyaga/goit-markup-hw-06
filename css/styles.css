@@ -818,6 +818,7 @@ fill: var(--secondary-color-text);
   margin-bottom: 4px;
 }
 .form-modal-textarea {
+	display: block;
   padding: 8px 16px;
   margin-bottom: 16px;
 
