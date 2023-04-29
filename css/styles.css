@@ -889,7 +889,6 @@ background-color: var(--secondary-color-text);
 }
 
 .modal-form-btn {
-  display: block;
   padding: 16px 32px;
   margin: 0 auto;
 
@@ -907,6 +906,11 @@ background-color: var(--secondary-color-text);
   background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  transition: background-color var(--anim-fast) var(--timing-function);
+}
+.modal-form-btn:hover,
+.modal-form-btn:focus{
+	background-color: var(--hover-color);
 }
 /*======= Form Modal =========*/
 /* ========================= Backdrop ========================== */
